@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Latihan 1 - Program Fibonacci</title>
+    <title>💖 Latihan 1 - Program Fibonacci 💖</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #ff9ecf, #ffc0e6);
+            background: linear-gradient(135deg, #ff9ecf, #ffc0e6);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,10 +17,10 @@
         .card {
             background: white;
             padding: 30px;
-            border-radius: 20px;
+            border-radius: 25px;
             text-align: center;
-            width: 500px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 520px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             position: relative;
             z-index: 2;
         }
@@ -31,20 +31,23 @@
 
         p {
             color: #555;
+            font-size: 14px;
         }
 
         button {
             background-color: #ff4da6;
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 10px;
+            padding: 12px 25px;
+            border-radius: 15px;
             cursor: pointer;
             font-size: 14px;
+            transition: 0.3s;
         }
 
         button:hover {
             background-color: #e60073;
+            transform: scale(1.05);
         }
 
         img {
@@ -53,12 +56,12 @@
             border-radius: 15px;
         }
 
-        /* Love animation */
+        /* Love Animation */
         .love {
             position: absolute;
-            color: #ff4da6;
-            font-size: 20px;
-            animation: fall 5s linear infinite;
+            font-size: 22px;
+            animation: fall 6s linear infinite;
+            opacity: 0.8;
         }
 
         @keyframes fall {
@@ -67,7 +70,7 @@
                 opacity: 1;
             }
             100% {
-                transform: translateY(100vh);
+                transform: translateY(110vh);
                 opacity: 0;
             }
         }
@@ -77,23 +80,24 @@
 <body>
 
     <!-- Love jatuh -->
-    <div class="love" style="left:10%;">💖</div>
-    <div class="love" style="left:30%; animation-delay:1s;">💕</div>
-    <div class="love" style="left:50%; animation-delay:2s;">💗</div>
-    <div class="love" style="left:70%; animation-delay:3s;">💞</div>
-    <div class="love" style="left:90%; animation-delay:4s;">💘</div>
+    <div class="love" style="left:10%; animation-delay:0s;">💖</div>
+    <div class="love" style="left:25%; animation-delay:1s;">💕</div>
+    <div class="love" style="left:40%; animation-delay:2s;">💗</div>
+    <div class="love" style="left:60%; animation-delay:3s;">💞</div>
+    <div class="love" style="left:80%; animation-delay:4s;">💘</div>
 
     <div class="card">
         <h1>💖 Latihan 1 - Program Fibonacci 💖</h1>
         <p>
             Program ini menghitung bilangan Fibonacci ke-20 menggunakan bahasa Dart.
-            Berikut adalah hasil output program 💕
+            Klik tombol di bawah untuk melihat source code di DartPad 💕
         </p>
 
-        <a href="https://dartpad.dev" target="_blank">
+        <a href="https://dartpad.dev/?id=62d13627487344f5effc530b48b3f12d" target="_blank">
             <button>💗 Lihat Source Code di DartPad 💗</button>
         </a>
 
+        <!-- Pastikan nama file gambar ini sama persis -->
         <img src="hasil-output.png" alt="Output Program">
     </div>
 
