@@ -1,106 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Latihan 1 - Program Fibonacci</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #74ebd5, #9face6);
-      padding: 40px;
-    }
+    <title>Latihan 1 - Program Fibonacci</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9ecf, #ffc0e6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
 
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            width: 500px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+        }
 
-    h2 {
-      color: #333;
-    }
+        h1 {
+            color: #ff4da6;
+        }
 
-    button {
-      background-color: #4a69bd;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 15px;
-    }
+        p {
+            color: #555;
+        }
 
-    button:hover {
-      background-color: #1e3799;
-    }
+        button {
+            background-color: #ff4da6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
 
-    img {
-      margin-top: 20px;
-      width: 100%;
-      border-radius: 10px;
-    }
+        button:hover {
+            background-color: #e60073;
+        }
 
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.6);
-    }
+        img {
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 15px;
+        }
 
-    .popup-content {
-      background: white;
-      width: 80%;
-      margin: 5% auto;
-      padding: 20px;
-      border-radius: 10px;
-    }
+        /* Love animation */
+        .love {
+            position: absolute;
+            color: #ff4da6;
+            font-size: 20px;
+            animation: fall 5s linear infinite;
+        }
 
-    .close {
-      float: right;
-      cursor: pointer;
-      font-size: 18px;
-    }
-  </style>
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="card">
-  <h2>Latihan 1 - Program Fibonacci</h2>
+    <!-- Love jatuh -->
+    <div class="love" style="left:10%;">💖</div>
+    <div class="love" style="left:30%; animation-delay:1s;">💕</div>
+    <div class="love" style="left:50%; animation-delay:2s;">💗</div>
+    <div class="love" style="left:70%; animation-delay:3s;">💞</div>
+    <div class="love" style="left:90%; animation-delay:4s;">💘</div>
 
-  <p>
-    Program ini menghitung bilangan Fibonacci ke-20 menggunakan bahasa Dart.
-    Gambar di bawah adalah hasil output program.
-  </p>
+    <div class="card">
+        <h1>💖 Latihan 1 - Program Fibonacci 💖</h1>
+        <p>
+            Program ini menghitung bilangan Fibonacci ke-20 menggunakan bahasa Dart.
+            Berikut adalah hasil output program 💕
+        </p>
 
-  <button onclick="document.getElementById('popup').style.display='block'">
-    Lihat Source Code di DartPad
-  </button>
+        <a href="https://dartpad.dev" target="_blank">
+            <button>💗 Lihat Source Code di DartPad 💗</button>
+        </a>
 
-  <img src="output.png" alt="Output Program">
-</div>
-
-<div id="popup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="document.getElementById('popup').style.display='none'">
-      ❌
-    </span>
-
-    <h3>Source Code Dart</h3>
-
-    <iframe 
-    src="https://dartpad.dev/embed-dart.html?id=8d7ab5fd1197aed7c365c5c939b6a"
-    width="100%" 
-    height="500">
-    </iframe>
-  </div>
-</div>
+        <img src="hasil-output.png" alt="Output Program">
+    </div>
 
 </body>
 </html>
